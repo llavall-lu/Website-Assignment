@@ -19,17 +19,17 @@
     <div class="container features">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12"> <!-- This is the grid view form that divides the page into 12 segments, col-lg-4 and col-md-4 show the images as taking up 4/12 (33%) of the page, where as on a small device it will be col-sm-12 which makes the images take up 12/12 (100% of the screen)-->
-                <h3 class="feature-title">  </h3>
+        
                 <img src="css/images/slide01.jpg" class="img-fluid">
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title"></h3>
+    
                 <img src="css/images/slide02.jpg" class="img-fluid">
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title"></h3>
+    
                 <img src="css/images/slide03.jpg" class="img-fluid">
             </div>
         </div>
