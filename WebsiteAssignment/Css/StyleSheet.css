@@ -1,0 +1,213 @@
+
+@media (max-width: 590px) {   /* This is to make the page viewable on mobile */
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
+}
+body {
+  animation-name: fade;
+  animation-duration: 1.5s;
+    padding: 0;
+    margin: 0;
+    background-color: #a4c9d8;
+  /* background: linear-gradient(to right, #a4c9d8 , #fb7ea8); /* Standard syntax should work on most browsers */
+}
+.navbar {
+    background:#222;
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
+}
+.nav-link,
+.navbar-brand {
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.nav-link {
+    margin-right: 1em;
+}
+.nav-link:hover {
+    color: #a4c9d8;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.headerB {
+    background-image: url("images/mbp01.jpg"); /* The background image (Local) */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);    /* Adds a layer of opacity to the background image, this is done to make the text more readable on a white background */
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: black;
+}
+.description p {
+	color: black;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.description button {
+    background: #222;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid black;
+    background: white;
+    color:black;
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* These work as compatability for different browsers althoug they are not really needed on most of the common ones */
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features .btn {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.page-footer {
+    background-color: #222;
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 8px;
+}
+.footer-copyright {
+    color: grey;
+    padding: 40px 0;
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-25%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.logS {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.mt {
+  margin-top: 60%;
+  text-align: center;
+}
+.center {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.box {
+  background-color: white;
+ width: 320px;
+ border: 15px solid #222;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns next to each other */
+.column {
+  max-width: 24%;
+  padding: 0 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border: 5px solid #222;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
